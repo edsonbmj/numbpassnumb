@@ -4,13 +4,14 @@
 }
 body{
   background-color: royalblue;
-  font-family: JetBrains Mono;
 }
 h1{
   text-align: center;
   margin: 20px;
   color: azure;
   font-size: 40px;
+  font-family: Nunito;
+  
 }
 h1:after{
   content:"";

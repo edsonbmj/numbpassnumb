@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NumPassNum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Number Pass Number</h1>
+  <div class="container">
+    <ul>
+      <li>Digit a number: <input type="text" name="txtnumb1" id="txtnumb1"></li>
+      <li>Digit another number: <input type="text" name="txtnumb2" id="txtnumb2"></li>
+      <li>Digit a number step: <input type="text" name="txtpass" id="txtpass"></li>
+      <li><input type="button" value="enter" id="enter" onclick="enter()"></li>
+  </div>
+  <div id="resp"></div>
+  <script>
+    function enter(){
+      var txtnumb1 = document.querySelector("input#txtnumb1")
+      var txtnumb2 = document.querySelector("input#txtnumb2")
+      var txtpass = document.querySelector("input#txtpass")
+      var numbpass = Number(txtpass.value)
+      var numb1 = Number(txtnumb1.value)
+      var numb2 = Number(txtnumb2.value)
+      var resp = document.querySelector("div#resp")
+      var i = numb1
+      while(i <= numb2){
+        resp.innerHTML += `${i}; `
+        i = i + numbpass
+      }  
+    }
+   </script>
+</body>
+</html>

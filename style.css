@@ -1,63 +1,55 @@
 *{
-  margin: 0;
-  padding: 0;
+  margin: 10px auto;
+  padding: 10px auto;
 }
 body{
-  background-color: royalblue;
+  background-color: paleturquoise;
+}
+input{
   font-family: JetBrains Mono;
-}
-h1{
-  text-align: center;
-  margin: 20px;
-  color: azure;
-  font-size: 60px;
-  font-family: Nunito;
-  
-}
-h1:after{
-  content:"";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background-color: white;
-  margin: 8px auto;
+  background-color: greenyellow;
+  font-weight: bolder;
+  border-radius: 3px;
 }
 .container{
-  width: 400px;
-  min-height: 250px;
-  margin: 10px auto;
-  background-color: white;
-  border-radius: 10px;
-  padding: 15px;
-}
-.container ul li{
-  list-style-type: none;
-  margin-top: 20px;
-}
-.container input{
-  border-radius: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5px;
-  padding: 5px;
-  font-family: JetBrains Mono;
-}
-.container input:hover{
-  background-color: greenyellow;
-  transition: .5s;
-}
-.container #enter{
-  background-color: greenyellow;
-  font-family: JetBrains Mono;
   padding: 20px;
+  width: 400px;
+  height: 300px;
+  background-color: papayawhip;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: whitesmoke;
 }
-.container #enter:hover{
-  transition: .5s;
-  background-color: azure;
+.container h1{
+  font-family: JetBrains Mono;
+  text-align: center;
+}
+.container h1:after{
+  content: "";
+  width: 80px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: royalblue;
+  display: block;
+  margin-top: 10px;
+}
+.container #cont1, #cont2, #cont3{
+  font-family: JetBrains Mono;
+}
+.container #butao{
+  text-align: center;
+  background-color: greenyellow;
+  border-radius: 5px;
+}
+.container #butao:hover{
+  background-color: royalblue;
+  transition: .3s;
 }
 #resp{
   text-align: center;
-  margin-top: 50px;
-  font-size: 30px;
-  color: azure;
+  margin: 10px; auto;
+  min-height: 200px;
+  font-family: JetBrains Mono;
+  color: black;
+  font-size: 20px;
 }

@@ -4,7 +4,6 @@
   <title>Somando numeros</title>
 <head>
 <link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" type="image/x-icon" href="https://www.flaticon.com/free-icon/number-1_5526334?term=number&page=1&position=79&page=1&position=79&related_id=5526334&origin=search">
 </head>
 <body>
   <div class="container">
@@ -13,23 +12,12 @@
     <div id="cont2">Digite outro numero: <input type="text" id="txtnum2"></div>
     <div id="cont3">Digite um passo: <input type="text" id="txtpass"></div>
     <input type="button" id="butao" value="enter" onclick="enter()">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.flaticon.com/free-icon/number-1_5526334?term=number&page=1&position=79&page=1&position=79&related_id=5526334&origin=search">
   </div>
-  <div class="cont-resp">>
+  <div class="cont-resp">
     <div id="resp"></div>
     <div id="total"></div>
   </div>
-  <script>
-    function enter(){
-      var txtnum1 = document.querySelector('input#txtnum1')
-      var txtnum2 = document.querySelector('input#txtnum2')
-      var txtpass = document.querySelector('input#txtpass')
-      var num1 = Number(txtnum1.value)
-      var num2 = Number(txtnum2.value)
-      var numpass = Number(txtpass.value)
-      var resp = document.querySelector('div#resp')  
-        for(var i=num1; i <= num2; i+=numpass)
-          resp.innerHTML += `${i}; `
-      }
-    </script>
+  <script src="index.js"></script>
 </body>
 </html>

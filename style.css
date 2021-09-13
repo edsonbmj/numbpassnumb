@@ -1,20 +1,23 @@
 *{
   margin: 10px auto;
   padding: 10px auto;
+  font-size: 30px;
 }
 body{
-  background-color: paleturquoise;
+  background-color: aquamarine;
 }
 input{
   font-family: JetBrains Mono;
   background-color: greenyellow;
   font-weight: bolder;
   border-radius: 3px;
+  border-color: white;
+  color: black;
 }
 .container{
   padding: 20px;
-  width: 400px;
-  height: 300px;
+  max-width: 600px;
+  min-height: 400px;
   background-color: papayawhip;
   border-radius: 10px;
   border-style: solid;
@@ -23,6 +26,8 @@ input{
 .container h1{
   font-family: JetBrains Mono;
   text-align: center;
+  font-size: 40px;
+  color: black;
 }
 .container h1:after{
   content: "";
@@ -40,16 +45,17 @@ input{
   text-align: center;
   background-color: greenyellow;
   border-radius: 5px;
+  border-color: white;
 }
 .container #butao:hover{
   background-color: royalblue;
-  transition: .3s;
+  transition: .6s;
+  border-color: white;
 }
 #resp{
   text-align: center;
-  margin: 10px; auto;
+  margin: 5px; auto;
   min-height: 200px;
   font-family: JetBrains Mono;
   color: black;
-  font-size: 20px;
 }

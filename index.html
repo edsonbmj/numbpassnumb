@@ -1,40 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-BR">
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NumPassNum</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <title>Somando numeros</title>
+<head>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Number Pass Number</h1>
   <div class="container">
-    <ul>
-      <li>Digit a number: <input type="text" name="txtnumb1" id="txtnumb1"></li>
-      <li>Digit another number: <input type="text" name="txtnumb2" id="txtnumb2"></li>
-      <li>Digit a number step: <input type="text" name="txtpass" id="txtpass"></li>
-      <li><input type="button" value="enter" id="enter" onclick="enter()"></li>
+    <h1>Somando Valores</h1>
+    <div id="cont1">Digite um numero: <input type="text" id="txtnum1"></div>
+    <div id="cont2">Digite outro numero: <input type="text" id="txtnum2"></div>
+    <div id="cont3">Digite um passo: <input type="text" id="txtpass"></div>
+    <input type="button" id="butao" value="enter" onclick="enter()">
   </div>
-  <div id="resp"></div>
+  <div class="cont-resp">>
+    <div id="resp"></div>
+    <div id="total"></div>
+  </div>
   <script>
     function enter(){
-      var txtnumb1 = document.querySelector("input#txtnumb1")
-      var txtnumb2 = document.querySelector("input#txtnumb2")
-      var txtpass = document.querySelector("input#txtpass")
-      var numbpass = Number(txtpass.value)
-      var numb1 = Number(txtnumb1.value)
-      var numb2 = Number(txtnumb2.value)
-      var resp = document.querySelector("div#resp")
-      var i = numb1
-      while(i <= numb2){
-        resp.innerHTML += `${i}; `
-        i = i + numbpass
-      }  
-    }
-   </script>
+      var txtnum1 = document.querySelector('input#txtnum1')
+      var txtnum2 = document.querySelector('input#txtnum2')
+      var txtpass = document.querySelector('input#txtpass')
+      var num1 = Number(txtnum1.value)
+      var num2 = Number(txtnum2.value)
+      var numpass = Number(txtpass.value)
+      var resp = document.querySelector('div#resp')  
+        for(var i=num1; i <= num2; i+=numpass)
+          resp.innerHTML += `${i}; `
+      }
+    </script>
 </body>
 </html>
